@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arial';
+    background-color: rgb(50, 67, 80);
+    margin: 0;
+}
+
+main {
+    color: white;
+    text-align: center;
+}
+
+main h1 {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    font-size: 5vh;
+    margin: 5px;
+    margin-top: .2vh;
+    color: transparent;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.349), 0px 1px 2px rgb(19, 43, 71);
+}
+
+.corpo {
+    overflow: hidden;
+    transition: .5s;
+    margin: auto;
+    background-color: rgb(175, 175, 175);
+    width: 38vw;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 2vh 0;
+    border-radius: 2vh;
+    box-shadow: 0vw -.3vh rgb(255, 255, 255),
+        0vw .3vh rgb(0, 0, 0),
+        0vw 2vh rgb(95, 95, 95),
+        0vw 2.8vh rgb(0, 0, 0),
+        .3vw 2.8vh rgb(0, 0, 0),
+        -.3vw 2.8vh rgb(0, 0, 0),
+        -.3vw -.8vh rgb(0, 0, 0),
+        0.3vw -.8vh rgb(0, 0, 0);
+}
+
+.display {
+    transition: .5s;
+    margin: auto;
+    background-color: rgb(75, 75, 75);
+    height: 14vh;
+    width: 37vw;
+    min-width: 370px;
+    max-width: 470px;
+    border: solid 1px rgb(78, 78, 78);
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    border-bottom: none;
+}
+
+#displayLED {
+    transition: .5s;
+    background-color: rgba(39, 39, 39, 0.678);
+    font-size: 8vh;
+    margin: 1vh auto;
+    width: 35vw;
+    min-width: 350px;
+    max-width: 450px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    border-radius: .5vh;
+    height: 11vh;
+}
+
+#ledCalc {
+    float: left;
+    font-size: 3vh;
+    margin: 0;
+}
+
+.botao {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    transition: .5s;
+    font-size: 5vh;
+    background-color: rgb(219, 219, 219);
+    outline: none;
+    border: none;
+    border-radius: 2vh;
+    width: 8vw;
+    min-width: 80px;
+    height: 10vh;
+    margin: 1.5vh .5vw;
+    max-width: 100px;
+    box-shadow: inset 0vw .3vh white,
+        0vw .5vh black, 0vw 1.5vh rgba(179, 179, 179, 0.568),
+        0vw 2vh black, 0vw -.5vh black,
+        .25vw -.5vh black, -.25vw -.5vh black,
+        .25vw 2vh black, -.25vw 2vh black;
+}
+
+.botao:hover {
+    transition: .1s;
+    transform: translateY(.5vh);
+    box-shadow: inset 0vw .3vh rgb(224, 224, 224), 0vw .5vh black, 0vw 1vh rgba(143, 142, 142, 0.568),
+        0vw 1.5vh black, 0vw -.5vh black,
+        .25vw -.5vh black, -.25vw -.5vh black,
+        .25vw 1.5vh black, -.25vw 1.5vh black;
+}
+
+.botao:active,
+#result:active {
+    background-color: rgb(255, 255, 255);
+    transform: translateY(.75vh);
+    box-shadow: inset 0vw .3vh white, 0vw .5vh black, 0vw .75vh rgba(143, 142, 142, 0.568),
+        0vw 1.25vh black, 0vw -.5vh black,
+        .25vw -.5vh black, -.25vw -.5vh black,
+        .25vw 1.25vh black, -.25vw 1.25vh black;
+}
+
+#result {
+    background-color: rgb(117, 166, 230);
+    color: white;
+    width: 14vw;
+    min-width: 170px;
+    max-width: 270px;
+
+}
+
+#result:active {
+    background-color: rgb(89, 138, 201);
+}
+
+#num0 {
+    width: 14vw;
+    min-width: 170px;
+    max-width: 250px;
+
+}
+
+.operador {
+    background-color: rgb(189, 189, 189);
+    color: rgb(45, 83, 133);
+}
+
+.corpoBotoes {
+    transition: .5s;
+    margin: auto;
+    border: solid 1px rgb(78, 78, 78);
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    width: 37vw;
+    min-width: 370px;
+    max-width: 470px;
+    height: 65vh;
+    padding: 10px 0;
+    background-color: grey;
+
+    /*Bordinha top*/
+}
+
+.btn-group {
+    display: block;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    height: 80px;
+    font-weight: bold;
+    color: rgb(58, 60, 179);
+    background-color: white;
+    height: 80px;
+    margin: 0;
+    margin-top: 10vh;
+}
+
+footer img {
+    height: 80px;
+    margin: 0;
+}
+
+footer p {
+    top: 15%;
+    position: relative;
+    height: 60px;
+    margin: 0;
+    margin-left: 15px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<body lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <script src="javascript/script.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+        <title>Calculadora</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Calculadora do ano  20XX</h1>
+            <div class="corpo">
+                <div class="display">
+                    <div id="displayLED">
+                        <div id="ledCalc"></div>
+                        <div id="ledInput"></div>
+                        <div id="ledResult"></div>
+                    </div>
+                </div>
+                <div class="corpo2">
+                    <div class="corpoBotoes">
+                        <div class="btn-group">
+                            <button class="botao" onclick="ButtonClick(this)" id="1">1</button><button class="botao" onclick="ButtonClick(this)" id="2">2</button><button class="botao" onclick="ButtonClick(this)" id="3">3</button><button class="botao operador" onclick="ButtonClick(this)" id="plus">+</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="botao" onclick="ButtonClick(this)" id="4">4</button><button class="botao" onclick="ButtonClick(this)" id="5">5</button><button class="botao" onclick="ButtonClick(this)" id="6">6</button><button class="botao operador" onclick="ButtonClick(this)" id="minus">-</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="botao" onclick="ButtonClick(this)" id="7">7</button><button class="botao" onclick="ButtonClick(this)" id="8">8</button><button class="botao" onclick="ButtonClick(this)" id="9">9</button><button class="botao operador" onclick="ButtonClick(this)" id="mult">x</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="botao" onclick="ButtonClick(this)" id="point">.</button><button class="botao" onclick="ButtonClick(this)" id="num0">0</button><button class="botao operador" onclick="ButtonClick(this)" id="sinal">+/-</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="botao" onclick="ButtonClick(this)" id="result">=</button><button class="botao operador" onclick="ButtonClick(this)" id="clear">CE</button><button class="botao operador" onclick="ButtonClick(this)" id="divisao">/</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/Vinicius-Brito-Costa" title="Github" target="_blank"><img src="imagens/pp.png" title="autor"></a>
+            <p>&copy;Vinicius Brito Costa<br>2020</p>
+        </footer>
+    </body>
+</body>
