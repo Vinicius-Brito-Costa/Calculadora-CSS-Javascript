@@ -1,8 +1,9 @@
 # <div align="center">:pencil: Calculadora CSS/Javascript :pencil:</div>
-<div align="center"><img src="/imagens/2020-10-12-20-17-14.gif"></div>
+<p align="center"> <img src="/imagens/2020-10-12-20-17-14.gif"></p>
+
+### [<div align="center"> Clique aqui e teste a calculadora!</div>](https://vinicius-brito-costa.github.io/Calculadora-CSS-Javascript/) 
 
 ## <div align="center">Calculadora com as operações básicas, feita em Javascript, feita sem nenhum uso de imagens, apenas html e css.</div>
-
 <br>
 
 ### Autor
